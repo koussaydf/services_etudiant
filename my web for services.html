@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Etudiant</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Services Etudiant</h1>
+        <p>Your Gateway to Student Success</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#cv">Craft Your Impressive CV</a></li>
+            <li><a href="#motivation-letter">Stand Out with Motivation Letters</a></li>
+            <li><a href="#social-media-posts">Boost Your Online Presence</a></li>
+            <li><a href="#programming-courses">Master C and Python Coding</a></li>
+            <li><a href="#presentation">Create Impactful Presentations</a></li>
+        </ul>
+    </nav>
+    <section id="cv">
+        <h2>Create an Impressive CV</h2>
+        <p>Your journey to success begins with a professional CV. Let us help you showcase your skills and experiences in the best possible way to impress future employers and stand out in the job market.</p>
+    </section>
+    <section id="motivation-letter">
+        <h2>Craft Motivation Letters</h2>
+        <p>Unlock your potential with persuasive motivation letters. We'll assist you in creating compelling letters that capture the attention of universities and employers, ensuring you make a lasting impression.</p>
+    </section>
+    <section id="social-media-posts">
+        <h2>Elevate Your Online Presence</h2>
+        <p>Enhance your social media presence with eye-catching Facebook and Instagram posts. Boost your online persona, engage your audience, and make a lasting impact with our creative designs.</p>
+    </section>
+    <section id="programming-courses">
+        <h2>Master Coding</h2>
+        <p>Explore the exciting world of programming with our C language and Python courses and exercises. Develop your coding skills, tackle real-world problems, and prepare for the tech industry of tomorrow.</p>
+    </section>
+    <section id="presentation">
+        <h2>Create Impactful Presentations</h2>
+        <p>Deliver captivating presentations for your studies and career. We provide the tools and guidance to help you create impactful presentations that leave a lasting impression on your audience.</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Services Etudiant</p>
+    </footer>
+    
+    <script>
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
